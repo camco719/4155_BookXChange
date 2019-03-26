@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<img src="bookicon.png" alt="BookXChange">
+<body style="background-color:#f1f1f1;">
+<div class="container">
+ <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openBook(event, 'MyBook')">My Books</button>
+  <button class="tablinks" onclick="openBook(event, 'Rate')">Rate & Review</button>
+  <button class="tablinks" onclick="openBook(event, 'Discover')">Discover</button>
+</div>
+
+<!-- Tab content -->
+<div id="MyBook" class="tabcontent">
+  <h3>My Books</h3>
+  <p>Use The To-Do List tool to add a list of book you would like to read!</p>
+
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  
+</ul>
+
+
+
+</div>
+
+<div id="Rate" class="tabcontent">
+  <h3>Rate/Review</h3>
+  <p>Review Books here.</p> 
+</div>
+
+<div id="Discover" class="tabcontent">
+  <h3>Discover</h3>
+  <p>Discover Books here.</p>
+</div>
+</div>
+</body>
+</html>
