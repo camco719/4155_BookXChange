@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <img src="bookicon.png" alt="BookXChange">
+</head>
+
+<body style="background-color:#f1f1f1;">
+<div class="container">
+ <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openBook(event, 'MyBook')">My Books</button>
+  <button class="tablinks" onclick="openBook(event, 'Rate')">Rate & Review</button>
+  <button class="tablinks" onclick="openBook(event, 'Discover')">Discover</button>
+</div>
+
+<!-- Tab content -->
+<div id="Rate" class="tabcontent">
+  <h3 class="heading">Rate & Review</h3>
+
+  
+    <form action="submit_review.php">
+      <h4 class="inputHeading">Enter Book Title:</h4> <input type="text" name="bookTitle"> <br>
+      <br><br><h4 class="inputHeading">Enter Book Review:</h4> <input type="text" name="bookReview"> 
+    
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div> <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+<div id="Rate" class="tabcontent">
+  <h3>Rate/Review</h3>
+  <p>Review Books here.</p> 
+</div>
+
+<div id="Discover" class="tabcontent">
+  <h3>Discover</h3>
+  <p>Discover Books here.</p>
+</div>
+</div>
+</body>
+</html>
